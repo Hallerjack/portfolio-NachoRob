@@ -1,0 +1,74 @@
+# ───────────────────────────────
+# SISTEMA / ENTORNO
+# ───────────────────────────────
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# ───────────────────────────────
+# DEPENDENCIAS
+# ───────────────────────────────
+node_modules/
+bower_components/
+vendor/
+
+# ───────────────────────────────
+# BUILD / COMPILACIÓN
+# ───────────────────────────────
+dist/
+build/
+.cache/
+.tmp/
+out/
+coverage/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ───────────────────────────────
+# CONFIGURACIÓN LOCAL
+# ───────────────────────────────
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ───────────────────────────────
+# EDITORES
+# ───────────────────────────────
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ───────────────────────────────
+# ARCHIVOS GENERADOS
+# ───────────────────────────────
+*.min.js
+*.min.css
+*.map
+
+# ───────────────────────────────
+# IMÁGENES / MEDIA TEMPORALES
+# ───────────────────────────────
+*.psd
+*.ai
+*.xcf
+*.sketch
+
+# ───────────────────────────────
+# SISTEMAS DE DESPLIEGUE
+# ───────────────────────────────
+.vercel/
+.netlify/
+firebase-debug.log
+functions/node_modules/
+
+# ───────────────────────────────
+# SISTEMAS DE CONTROL DE VERSIONES SECUNDARIOS
+# ───────────────────────────────
+*.zip
+*.tar.gz

@@ -1,0 +1,325 @@
+/* General Styles */
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700; /* o 900 para títulos más bold */
+}
+/* Navbar Styles */
+.navbar {
+  background-color: #141e28;
+  position: fixed;
+  top: 0;
+  width: 100%; 
+  z-index: 1000;
+  height: 80px;
+}
+
+.nav-link {
+  color: #ffffff !important;
+}
+
+.navbar-brand {
+  position: relative;
+  left: 15px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+    margin-left: auto;
+}
+/* Hero styles*/
+.hero-section {
+  background-color: #141e28;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/img/bg-hero.png');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3; /* ajusta entre 0.1 y 1 */
+  z-index: 0;
+}
+
+.hero-title {
+  color: white;
+  font-size: 200px;
+  font-weight: 100;
+  text-align: center;
+  position: relative;
+  z-index: 1; /* por encima de la imagen */
+}
+
+.hero-subtitle {
+  color: white;
+  font-size: 30px;
+  font-weight: 10;
+  text-align: center;
+  position: relative;
+  z-index: 1; /* por encima de la imagen */
+}
+/* Educación Section */
+
+.education-card {
+    border: 2px solid #141e28;
+    padding: 30px;
+    background-color: white;
+    margin: 0;
+    text-align: left;
+    min-height: 445px;
+    position: relative;
+}
+
+#portfolio .col-12.col-md-6.col-lg-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  padding: 0 !important;
+}
+.card-content {
+    border-left: 1px solid #bbb;
+    padding-left: 15px;
+    margin-left: 5px;
+}
+
+.education-card i {
+    color: #141e28;
+}
+
+.highlight-pink {
+    border-bottom: 8px solid #ff006e;
+}
+
+.highlight-blue {
+    border-bottom: 8px solid #00d9ff;
+}
+
+.highlight-orange {
+    border-bottom: 8px solid #ff6b00;
+}
+
+.highlight-pink,
+.highlight-blue,
+.highlight-orange {
+    display: inline-block;
+    line-height: 0.5;
+    padding-bottom: 0;
+}
+
+.title-with-icon {
+    display: flex;
+    align-items: start; /* centra verticalmente */
+    gap: 15px; /* espacio entre ícono y texto */
+}
+.code-tag {
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Portafolio Styles */
+.portfolio-section {
+    background-color: #141e28;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-section::before {
+    content: 'const developer = { \A  name: "Nacho", \A  skills: ["JS", "Python"], \A  passion: "code" \A}; \A\Afunction build() { \A  return dreams; \A}';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    color: rgba(105, 218, 235, 0.2); /* cyan muy transparente */
+    white-space: pre; /* respeta los saltos de línea */
+    padding: 20px;
+    z-index: 0;
+}
+
+.portfolio-section .container {
+    position: relative;
+    z-index: 1; /* por encima del fondo */
+}
+
+.portfolio h2 {
+    color: white;
+}
+.project-card {
+  background-color: rgba(255, 255, 255, 0.1); /* más claro */
+  border: 1px solid #ffffff;
+  padding: 20px;
+  color: white;
+  text-align: center; /* centra todo */
+  transition: transform 0.3s;
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project-card h4 {
+  margin-bottom: 5px;
+}
+
+.project-category {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 15px;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.tech-tags span {
+    display: inline-block;
+    background-color: #ff006e;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-right: 5px;
+    opacity: 75%;
+}
+
+.btn-github {
+  display: inline-block;
+  background-color: #916dd0;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.btn-github:hover {
+  background-color: #795bae;
+  color: white;
+}
+
+.portfolio-section h2 {
+  color: white !important;
+}
+
+/* Experience Section */
+.experience-section {
+  background-color: #ffffff;
+}
+
+.accordion-item {
+  background-color: #3d2d5a;
+  border: none;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.accordion-button {
+  background-color: #3d2d5a;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 20px 25px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #916dd0;
+  color: white;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.accordion-button::after {
+  filter: brightness(0) invert(1); /* Hace el ícono blanco */
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-right: 20px;
+}
+
+.job-title {
+  font-size: 18px;
+}
+
+.job-years {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.accordion-body {
+  background-color: #3d2d5a;
+  color: white;
+  padding: 25px;
+}
+
+.job-link {
+  margin-bottom: 15px;
+}
+
+.job-link a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.job-link a:hover {
+  color: #69daeb;
+}
+
+.job-link i {
+  color: #cbb8eb; /* o el morado que prefieras */
+  margin-right: 8px;
+}
+
+.job-link a i {
+  color: #cbb8eb; /* o el morado que prefieras */
+  margin-left: 35px;
+}
+
+.job-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.job-content p {
+  flex: 1; /* El texto ocupa el espacio disponible */
+}
+
+.job-content img {
+  flex-shrink: 0; /* La imagen no se achica */
+}
