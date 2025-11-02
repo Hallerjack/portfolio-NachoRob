@@ -203,7 +203,7 @@ h1 {
   letter-spacing: -1.5%;
 }
 
-/* Portafolio Styles */
+/* Portfolio Styles */
 .portfolio-section {
     background-color: #141e28;
     position: relative;
@@ -405,6 +405,40 @@ h1 {
 
 .job-content img {
   flex-shrink: 0; /* La imagen no se achica */
+}
+
+@media (max-width: 768px) {
+  .project-card h4 {
+    font-size: 1.25rem; /* reduce tamaño */
+    word-wrap: break-word; /* rompe palabras largas */
+    overflow-wrap: break-word;
+  }
+  
+  .project-card {
+    padding: 15px; /* reduce padding */
+  }
+  
+  .project-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  .title-with-icon {
+    flex-direction: column; /* cambia a columna en móvil */
+    align-items: center;
+    text-align: center;
+  }
+  
+  .title-with-icon h3 {
+    font-size: 1.5rem; /* reduce tamaño */
+  }
+  
+  .education-card {
+    min-height: auto; /* quita altura fija */
+  }
 }
 /* contact */
 
