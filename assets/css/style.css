@@ -583,19 +583,19 @@ body {
   }
   
   .title-with-icon h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem !important;
   }
   
   .title-with-icon i {
-    font-size: 1.5rem;
+    font-size: 1.6rem !important;
   }
 
   .education-card {
-    padding: 15px;
+    padding: 18px !important;
   }
 
   .card-content p {
-    font-size: 0.9rem; /* texto más chico */
+    font-size: 0.85rem !important;
   }
 }
 
