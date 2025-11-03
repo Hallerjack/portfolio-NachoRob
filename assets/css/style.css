@@ -569,7 +569,7 @@ body {
 }
 
 /* Tablets (769px - 1024px) - iPad */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 1006) and (max-width: 1356px) {
   /* Hero */
   .hero-title {
     font-size: 7.5rem;
@@ -579,23 +579,23 @@ body {
   .title-with-icon {
     flex-direction: row;
     align-items: flex-start;
-    gap: 5px;
+    gap: 4px !important;
   }
   
   .title-with-icon h3 {
-    font-size: 1.3rem !important;
+    font-size: 1.15rem !important;
   }
   
   .title-with-icon i {
-    font-size: 1.6rem !important;
+    font-size: 1.4rem !important;
   }
 
   .education-card {
-    padding: 18px !important;
+    padding: 15px !important;
   }
 
   .card-content p {
-    font-size: 0.85rem !important;
+    font-size: 0.82rem !important;
   }
 }
 
